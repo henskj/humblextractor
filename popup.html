@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Export Keys</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 10px;
+        }
+        button {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .selected {
+            background-color: #007bff; /* Change background color to indicate selection */
+            color: white; /* Change text color for better contrast */
+            border: 1px solid #0056b3; /* Optional: adjust the border */
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Inset shadow to simulate a pressed effect */
+        }
+    </style>
+</head>
+<body>
+    <div id="filetypes">
+        <button class="filetype-btn" data-filetype=".txt">.txt</button>
+        <button class="filetype-btn" data-filetype=".csv">.csv</button>
+        <!-- <button class="filetype-btn" data-filetype=".xml">.xml</button> -->
+        <!-- <button class="filetype-btn" data-filetype=".json">.json</button> -->
+
+    </div>
+    <hr>
+    <div id="actions">
+        <button id="extractData">Extract Data</button>
+        <!-- <button id="revealKeys">Reveal Keys</button> -->
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
